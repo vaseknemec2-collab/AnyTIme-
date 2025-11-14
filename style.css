@@ -57,11 +57,84 @@ body {
 
 #home {
     height: 100vh;
-    padding-top: 100px; /* přesně o něco víc než výška navbaru (80px) */
-    background-image: url('photo/prague.jpg');
+    padding-top: 100px;    
+    background-image: 
+        linear-gradient(rgba(154, 197, 58, 0.2), rgba(154, 197, 58, 0.5)), /* zelená folie 50% */
+        url('photo/prague.jpg'); /* obrázek */
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+}
+
+.o_nas {
+    min-height: auto;
+    padding: 100px 40px;
+    background-color: #d6d6d6;
+}
+
+.o_nas-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.o_nas h2 {
+    color: #72992f;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.o_nas-text1 {
+    flex: 1;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    flex-wrap: wrap; 
+}
+
+.o_nas-text2 {
+    flex: 1;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
+.odpad {
+    min-height: auto;
+    padding: 100px 40px;
+    background-color: #efefef;
+}
+
+.kontakty {
+    min-height: auto;
+    padding: 100px 40px;
+    background-color: #72992f;
+}
+
+.kontakty h2 {
+    color: #d6d6d6;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.kontakt-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.kontakt-info p {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #d6d6d6;
+}
+
+.kontakt-info strong {
+    color: black;
 }
